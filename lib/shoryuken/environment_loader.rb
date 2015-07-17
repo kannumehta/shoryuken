@@ -19,7 +19,7 @@ module Shoryuken
       load_rails if options[:rails]
       Shoryuken.options.merge!(config_file_options)
       merge_cli_defined_queues
-      prefix_active_job_queue_names
+      #prefix_active_job_queue_names
       Shoryuken.options.merge!(options)
       parse_queues
       require_workers
